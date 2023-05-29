@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Tarefas.Data.Map;
 using Tarefas.Models;
 
 namespace Tarefas.Data;
@@ -12,6 +13,8 @@ public class TarefasDBContex : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfiguration(new UserMap());
+        modelBuilder.ApplyConfiguration(new TaskMap());
         base.OnModelCreating(modelBuilder);
     }
 }
