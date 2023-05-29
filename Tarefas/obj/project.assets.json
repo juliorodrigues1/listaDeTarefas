@@ -323,6 +323,9 @@
           "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
+      "NuGet.CommandLine/6.5.0": {
+        "type": "package"
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -861,6 +864,22 @@
         "postgresql.png"
       ]
     },
+    "NuGet.CommandLine/6.5.0": {
+      "sha512": "RGwYvcxHg3iM+Liy9GqpzShDGXAPfkOrKAUpezCu8zVAmcK3qhtcMhdQxayE/VYsJQGelwq+iwA+t8fzdbJZ2g==",
+      "type": "package",
+      "path": "nuget.commandline/6.5.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "nuget.commandline.6.5.0.nupkg.sha512",
+        "nuget.commandline.nuspec",
+        "tools/NuGet.exe",
+        "tools/NuGet.pdb"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.2.3": {
       "sha512": "cnzQDn0Le+hInsw2SYwlOhOCPXpYi/szcvnyqZJ12v+QyrLBwAmWXBg6RIyHB18s/mLeywC+Rg2O9ndz0IUNYQ==",
       "type": "package",
@@ -1022,6 +1041,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.0",
+      "NuGet.CommandLine >= 6.5.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1083,6 +1103,12 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "NuGet.CommandLine": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.5.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

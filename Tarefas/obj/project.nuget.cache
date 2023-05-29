@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ifs53LXC0R1rjhaumOwUuvT9EhkfPbiTaACQy8nW0ws91MeVkzGpanYvmqzQ2QE3elLi68/V9CXU4qgwpbOu2Q==",
+  "dgSpecHash": "pIRQt59S4a0/XlaY7kwo2Py10gL/SDghnTiXfP9sNwK9f0dc6qF8cp/71F4l3C8vCtGB3CmzrvPli75JMJq4vA==",
   "success": true,
   "projectFilePath": "D:\\c#\\Tarefas\\Tarefas\\Tarefas\\Tarefas.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.0\\npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\nuget.commandline\\6.5.0\\nuget.commandline.6.5.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

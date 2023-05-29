@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Tarefas.Data;
+using Tarefas.Repositories;
+using Tarefas.Repositories.Interfaces;
+
 namespace Tarefas
 {
     public class Program
@@ -7,12 +12,18 @@ namespace Tarefas
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            //builder.Services.AddEntityFrameworkNpgsql()
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddEntityFrameworkNpgsql()
+                .AddDbContext<TarefasDBContex>(
+                    options => options.UseNpgsql(builder.Configuration.GetConnectionString("DataBase"))
+                    );
+
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
 
             var app = builder.Build();
 
