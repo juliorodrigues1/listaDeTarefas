@@ -12,5 +12,8 @@ public class TaskMap : IEntityTypeConfiguration<TaskModel>
         builder.Property(x => x.name).IsRequired().HasMaxLength(255);
         builder.Property(x => x.description).HasMaxLength(1000);
         builder.Property(x => x.status).IsRequired();
+        builder.Property(x => x.userId);
+
+        builder.HasOne(x => x.user);
     }
 }
