@@ -15,13 +15,17 @@ public class TaskRepository : ITaskRepository
 
     public async Task<List<TaskModel>> findAll()
     {
-        return await _dbContex.Tasks.ToListAsync();
+        return await _dbContex.Tasks
+            .Include(x => x.user)
+            .ToListAsync();
 
     }
 
     public async Task<TaskModel> findById(int id)
     {
-        return await _dbContex.Tasks.FirstOrDefaultAsync(x => x.id == id);
+        return await _dbContex.Tasks
+            .Include(x => x.user)
+            .FirstOrDefaultAsync(x => x.id == id);
     }
 
     public async Task<TaskModel> create(TaskModel task)
